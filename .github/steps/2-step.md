@@ -143,7 +143,7 @@ Finished workflow file: `.github/workflows/python-package.yml.example`
        MINIMUM_ORANGE: 70
 
    - name: Fail if below threshold
-     run: coverage report --fail-under=90
+     run: coverage report --fail-under=60
    ```
 
    {% endraw %}
