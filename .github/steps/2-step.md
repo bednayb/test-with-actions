@@ -114,7 +114,12 @@ Finished workflow file: `.github/workflows/python-package.yml.example`
      uses: actions/setup-python@v4
      with:
        python-version: 3.13
-
+   - name: cache
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      with:
+         python-version: '3.9'
+         cache: 'pip' # caching pip dependencies
    - name: Install dependencies
      run: |
        pip install -r requirements.txt
