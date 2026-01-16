@@ -21,7 +21,7 @@ jobs:
                         body: `🎉 You've created this issue comment using GitHub Script!!!, here a random number ${random}`
                     })
                     github.projects.createCard({
-                        column_id: {{columnID}},
+                        column_id: 2,
                         content_id: context.payload.issue.id,
                         content_type: "Issue"
                     });
